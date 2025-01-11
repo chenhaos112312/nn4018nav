@@ -23,9 +23,9 @@ const BlogPostCard = ({ post, className }) => {
   )
   function removeHttp(str) {
     // 检查字符串是否包含http
-    if (str.includes("https")) {
+    if (str.includes("http")) {
       // 如果包含，找到http的位置
-      let index = str.indexOf("https");
+      let index = str.indexOf("http");
       // 返回http之后的部分
       return str.slice(index, str.length);
     } else {
